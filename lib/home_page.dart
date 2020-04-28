@@ -50,7 +50,6 @@ class HomeScreen extends StatelessWidget {
                 navigateToHelpPage(context);
               },
             ),
-//            HelpButton(),
           ],
         ),
       ),
