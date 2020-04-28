@@ -26,10 +26,11 @@ class HomeScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              "Welcome to $_title",
+              "Welcome to",
               textDirection: TextDirection.ltr,
               style: TextStyle(fontSize: 30.0, fontFamily: "Comfortaa"),
             ),
+            AppImageWidget(),
             RaisedButton(
               child: Text(
                 "General Questions",
@@ -55,6 +56,15 @@ class HomeScreen extends StatelessWidget {
       ),
       appBar: AppBar(title: Text(_title),),
     );
+  }
+}
+
+class AppImageWidget extends StatelessWidget{
+  @override
+  Widget build(BuildContext context){
+    AssetImage logoAsset = AssetImage('images/SeniorProjectAppImage.png');
+    Image image = Image(image: logoAsset, width: 400.0, height: 400.0,);
+    return Container(child: image);
   }
 }
 

@@ -46,6 +46,20 @@ class GeneralQuestionsScreen extends StatelessWidget {
   }
 }
 
+//class Demo extends StatelessWidget {
+//  final testData = ["Example1", "Example2", "Example3", "Example100"];
+//
+//  @override
+//  Widget build(BuildContext context) {
+//    final _markDownData = testData.map((x) => "- $x\n").reduce((x, y) => "$x$y");
+//        return Scaffold(
+//          body: Container(
+//              margin: EdgeInsets.all(40.0),
+//              child: Markdown(data: _markDownData)),
+//        );
+//  }
+//}
+
 class CustomSearchDelegate extends SearchDelegate {
 
   @override
